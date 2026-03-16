@@ -1,0 +1,51 @@
+<form id="registerForm">
+
+<input type="text" id="username" placeholder="Username">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="wa" placeholder="Nomor WhatsApp">
+
+<input type="password" id="password" placeholder="Password">
+<input type="password" id="confirm" placeholder="Konfirmasi Password">
+
+<button type="submit">Daftar</button>
+
+</form>
+
+<script>
+
+document.getElementById("registerForm").onsubmit = function(e){
+
+e.preventDefault()
+
+let username = document.getElementById("username").value
+let password = document.getElementById("password").value
+let confirm = document.getElementById("confirm").value
+
+if(password.length < 6){
+alert("Password minimal 6 karakter")
+return
+}
+
+if(password !== confirm){
+alert("Password tidak sama")
+return
+}
+
+let users = JSON.parse(localStorage.getItem("users")) || []
+
+let exists = users.find(u => u.username === username)
+
+if(exists){
+alert("Username sudah digunakan")
+return
+}
+
+users.push({username,password})
+
+localStorage.setItem("users",JSON.stringify(users))
+
+alert("Akun berhasil dibuat, silakan login.")
+
+window.location="login.html"
+
+}

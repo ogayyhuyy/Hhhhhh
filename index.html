@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hubble Store</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+<h2>Hubble Store</h2>
+
+<ul id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="#">Daftar Akun</a></li>
+<li><a href="#">Cara Beli</a></li>
+<li><a href="#">Testimoni</a></li>
+
+<span id="guestMenu">
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Daftar</a></li>
+</span>
+
+<span id="userMenu" style="display:none">
+<li><a href="#" onclick="logout()">Logout</a></li>
+</span>
+
+</ul>
+</nav>
+
+<h1>Daftar Akun Game</h1>
+
+<div class="account-card">
+
+<img src="img/akun1.jpg">
+
+<h3>Kode Unit: HS001</h3>
+<p>Game: Free Fire</p>
+<p>Rank: Heroic</p>
+<p>Harga: Rp350.000</p>
+
+<button onclick="buyAccount('HS001')">Beli Akun</button>
+
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/store.js"></script>
+<script src="js/slider.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Dashboard Admin - Hubble Store</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<h1>Dashboard Admin</h1>
+
+<input type="text" id="searchBox" placeholder="Cari kode unit akun...">
+
+<button onclick="resetSearch()">Reset</button>
+
+<div id="accountList">
+
+<div class="admin-card" data-code="HS001">
+<h3>Kode Unit: HS001</h3>
+<p>Game: Free Fire</p>
+<p>Status: Available</p>
+
+<button>Edit</button>
+<button>Hapus</button>
+<button onclick="markSold(this)">Tandai SOLD</button>
+
+</div>
+
+</div>
+
+<script src="../js/store.js"></script>
+
+</body>
+</html>

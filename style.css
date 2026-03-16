@@ -1,0 +1,45 @@
+body{
+background:#0f172a;
+color:white;
+font-family:sans-serif;
+margin:0;
+}
+
+nav{
+background:#111827;
+padding:15px;
+display:flex;
+justify-content:space-between;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.account-card{
+border:1px solid #7c3aed;
+padding:15px;
+margin:20px;
+border-radius:10px;
+background:#1e293b;
+}
+
+button{
+background:#7c3aed;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#9333ea;
+}
